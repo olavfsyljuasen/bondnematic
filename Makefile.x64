@@ -1,0 +1,23 @@
+DATADIR = /scratch/sylju
+HOMEDIR = $(HOME)
+INCDIR = -I$(DATADIR)/include -I$(HOMEDIR)/include -I/usr/include 
+LIBDIR = -L$(DATADIR)/lib     -L$(HOMEDIR)/lib     -L/usr/lib
+LIBS   = -lfftw3 -lm -lstdc++ 
+
+# C++ compiler
+CCC= g++
+
+# options:
+CCOPTS=  -O3 -DNDEBUG
+
+# link option:
+LINKOPTS =  -O3 
+
+
+CCFLAGS = $(CCOPTS) $(INCDIR) 
+
+
+
+
+
+
